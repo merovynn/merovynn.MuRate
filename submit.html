@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MuRate - Participa</title>
+    <style>
+		body {
+			margin-top: 20px;
+			margin-right: 350px;
+			margin-bottom: 20px;
+			margin-left: 350px;
+            font-family: Arial, Helvetica;
+            background-color: #ffd67d;
+            text-align: justify
+		}
+
+        form {
+        width: 80%;
+        margin: 0 auto;
+        }
+
+        label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+        color: #125a89;
+        }
+
+        input[type="text"],
+        select,
+        textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        }
+
+        input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+        background-color: #0cb415;
+        }
+
+        textarea {
+        height: 150px;
+        }
+    </style>
+</head>
+<body>
+	<center><h1>MuRate</h1>
+	<h2>Música, pasión, comunidad.</h2>
+	<p>
+		<img src="./beyonce.png" alt="Imagen de Beyoncé (error de carga)" width=600"/>
+	</p></center>
+	<h3>Participa en el debate</h3>
+	<p>
+        Lo que más nos gusta en MuRate es <u>escucharos</u>. ¡Anímate y coméntanos qué te apasiona, qué te mueve o sobre qué deberíamos hablar próximamente!<br><br>
+
+        <form action="reviews.php" method="post">
+            <label for="album">Un álbum que te haya gustado:</label>
+            <input type="text" id="album" name="album">
+    
+            <label for="cancion">La canción que más te llame:</label>
+            <input type="text" id="cancion" name="cancion">
+    
+            <label for="rating">¿Qué nota le das al álbum?:</label>
+            <select id="rating" name="rating">
+                <option value="5">5 estrellas</option>
+                <option value="4">4 estrellas</option>
+                <option value="3">3 estrellas</option>
+                <option value="2">2 estrellas</option>
+                <option value="1">1 estrella</option>
+            </select>
+    
+            <label for="comentario">Comentario / Review:</label>
+            <textarea id="comentario" name="comentario"></textarea>
+    
+            <input type="submit" value="Publicar">
+        </form>
+
+        <br><br><a href="index.html">Volver atrás</a>
+	</p>
+</body>
+</html>
